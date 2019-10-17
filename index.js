@@ -40,7 +40,7 @@ function allWagesFor(employee) {
 }
 
 function calculatePayroll(employees) {
-  return employees.reduce( (total, employee) => total + allWagesFor(employee))
+  return employees.reduce( (total, employee) => total + allWagesFor(employee), 0)
 }
 
 function findEmployeeByFirstName (employees, firstName) {
